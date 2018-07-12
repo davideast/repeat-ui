@@ -1,0 +1,12 @@
+{
+  "name": "repeat-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tailwind build styles.css -c ./tailwind.js -o src/repeat-ui.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^0.6.3"
+  }
+}
