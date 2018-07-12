@@ -1,0 +1,5 @@
+:host {
+  @apply .block .bg-white .text-purple .shadow-lg .w-32 .px-4 .py-4 .font-sans .font-bold .my-8 .no-underline .text-center .rounded-lg .cursor-pointer;
+}
+
+@tailwind utilities;

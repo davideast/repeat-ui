@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repeat UI - Button</title>
   <link rel="stylesheet" href="./repeat-ui.css">
+  <link rel="stylesheet" href="components/button/not-defined.css">
+  <script type="module" src="components/button/index.js"></script>
 </head>
 
 <body>
@@ -21,14 +23,10 @@
     <div class="container mx-auto h-90vh flex flex-col justify-center items-center py-8 px-8">
 
       <section class="font-mono text-white py-8 text-center">
-        <h3 class="font-hairline text-4xl">Make GIFS from your life</h3>
+        <h3 class="font-hairline text-4xl leading-loose">Make GIFS from your life</h3>
       </section>
 
-      <!-- repeat-button -->
-      <a href="camera.html" class="bg-white text-purple shadow-lg w-32 px-4 py-4 font-sans font-bold my-8 no-underline text-center">
-        SIGN UP
-      </a>
-      <!-- /repeat-button -->
+      <repeat-button>SIGN UP</repeat-button>
 
     </div>
 
