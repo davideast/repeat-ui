@@ -13,6 +13,7 @@ export class RepeatCamera extends HTMLElement {
     this.shadow.innerHTML = RepeatCamera.template;
 
     this.video = this.shadow.querySelector('#repeatVideo');
+    this.canvas = this.shadow.querySelector('canvas');
     this.open();
   }
 
@@ -39,6 +40,22 @@ export class RepeatCamera extends HTMLElement {
       track.stop();
       this.video.pause();
     }
+  }
+
+  takePhoto() {
+    const imageWidth = this.video.videoWidth;
+    const imageHeight = this.video.videoHeight;
+
+    const context = this.canvas.getContext('2d');
+    this.canvas.width = imageWidth;
+    this.canvas.height = imageHeight;
+
+    context.drawImage(this.video, 0, 0, imageWidth, imageHeight);
+
+    const highRes = this.canvas.toDataURL('image/png');
+    const lowRes = this.canvas.toDataURL('image/png', 0.3);
+    
+    return { highRes, lowRes, imageHeight, imageWidth };
   }
 }
 

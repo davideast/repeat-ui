@@ -3,8 +3,7 @@
 }
 
 #repeatVideo {
-  @apply .block .bg-black .h-full .w-full;
+  @apply .block .h-full .w-full;
 }
-
 
 @tailwind utilities;
