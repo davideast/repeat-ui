@@ -1,0 +1,10 @@
+:host {
+  @apply .block .bg-black .h-full .w-full;
+}
+
+#repeatVideo {
+  @apply .block .bg-black .h-full .w-full;
+}
+
+
+@tailwind utilities;

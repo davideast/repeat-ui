@@ -1,0 +1,5 @@
+repeat-camera:not(defined) {
+  @apply .block .bg-black .h-full .w-full
+}
+
+@tailwind utilities;

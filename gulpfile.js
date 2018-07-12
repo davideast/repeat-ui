@@ -19,10 +19,7 @@ const cssnano = require('gulp-cssnano');
 const replace = require('gulp-replace');
 const argv = require('yargs').argv
 const fs = require('fs');
-
-const components = {
-  button: 'src/components/button/',
-};
+const gulpSequence = require('gulp-sequence');
 
 gulp.task('component:css', () => {
   return gulp.src([
@@ -33,7 +30,10 @@ gulp.task('component:css', () => {
       postcss([
         tailwindcss('./tailwind.js'),
         uncss({
-          html: [`src/components/${argv.component}/index.html`]
+          html: [
+            `src/components/${argv.component}/index.html`,
+            `src/components/${argv.component}/template.html`
+          ]
         }),
       ])
     )
@@ -83,4 +83,4 @@ function shadowTemplate(component) {
   return fs.readFileSync(`src/components/${component}/template.html`, 'utf8');
 }
 
-gulp.task('build', ['component:css', 'component:js']);
+gulp.task('build', gulpSequence('component:css', 'component:js'));
