@@ -14,7 +14,9 @@ export class RepeatCamera extends HTMLElement {
 
     this.video = this.shadow.querySelector('#repeatVideo');
     this.canvas = this.shadow.querySelector('canvas');
-    this.open();
+
+    const willAutoPlay = this.getAttribute('autoplay');
+    if(willAutoPlay !== null) { this.open(); }
   }
 
   open() {
