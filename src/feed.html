@@ -11,16 +11,13 @@
   <script type="module" src="components/gif/index.js"></script>
   <link rel="stylesheet" href="components/feed-item/not-defined.css">
   <script type="module" src="components/feed-item/index.js"></script>
+  <link rel="stylesheet" href="components/header/not-defined.css">
+  <script type="module" src="components/header/index.js"></script>
 </head>
 
 <body class="bg-grey-lighter">
 
-  <!-- repeat-header -->
-  <header class="fixed bg-white w-screen h-16 flex justify-between items-center px-4 mb-4">
-    <h2 class="font-mono text-pink font-hairline">Repeat</h2>
-    <div class="bg-purple rounded-full h-12 w-12"></div>
-  </header>
-  <!-- repeat-header -->
+  <repeat-header></repeat-header>
 
   <div class="bg-grey-lighter">
     <div class="container mx-auto flex flex-col justify-center items-center">
@@ -28,30 +25,11 @@
       <div class="mt-24">
 
         <repeat-feed-item src="assets/space-dog.gif"></repeat-feed-item>
-        <!-- repeat-feed-item
-        <div class="shadow-lg rounded-lg">
-          
-          <repeat-gif src="assets/space-dog.gif"></repeat-gif>
-
-          <div class="bg-white w-full rounded-lg rounded-t-none h-16 shadow-lg">
-            <div class="flex justify-around items-center h-full">
-              <button class="px-12">
-                <img style="height: 20px !important;" width="20px" src="assets/delete-icon.png">
-              </button>
-              <span class="v-spacer-grey"></span>
-              <button class="px-12">
-                  <img style="height: 29px !important;" width="39px" src="assets/cloud-icon.png">
-              </button>
-            </div>
-          </div>
-        </div>
-        -->
-
+       
       </div>
 
     </div>
   </div>
-  <!-- /repeat-container -->
 </body>
 
 </html>

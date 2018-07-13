@@ -1,2 +1,22 @@
-
-<img style="margin-left: 4px;" height="26px" width="29px" src="/assets/play-icon.png">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="29px" viewBox="0 0 26 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <polygon id="path-1" points="23 18 23 47.0172363 49 32.5086181"></polygon>
+    <filter x="-7.7%" y="-6.9%" width="115.4%" height="113.8%" filterUnits="objectBoundingBox" id="filter-2">
+      <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+      <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+    </filter>
+  </defs>
+  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="PlayButton" transform="translate(-23.000000, -18.000000)">
+      <g id="Path-2">
+        <g>
+          <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+          <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
