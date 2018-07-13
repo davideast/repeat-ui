@@ -13,7 +13,6 @@ export class RepeatGIF extends HTMLElement {
 
   set src(value) {
     this.setAttribute('src', value);
-    // TODO: set inner image
   }
 
   connectedCallback() {

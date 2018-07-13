@@ -1,0 +1,25 @@
+:host {
+  @apply 
+  .shadow-lg 
+  .rounded-lg
+  ;
+}
+
+.action-bar {
+  @apply 
+  .bg-white 
+  .w-full 
+  .rounded-lg 
+  .rounded-t-none 
+  .h-16 
+  .shadow-lg
+  ;
+}
+
+.action-bar button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+@tailwind utilities;

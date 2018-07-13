@@ -52,7 +52,8 @@ gulp.task('pages', () => {
     .src([
       './src/index.html', 
       './src/camera.html',
-      './src/preview.html'
+      './src/preview.html',
+      './src/feed.html',
     ])
     .pipe(gulp.dest('dist'));
 });
