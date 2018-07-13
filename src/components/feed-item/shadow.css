@@ -1,6 +1,6 @@
 :host {
   @apply 
-  .shadow-lg 
+  .block
   .rounded-lg
   ;
 }

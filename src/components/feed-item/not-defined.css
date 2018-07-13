@@ -1,6 +1,6 @@
 repeat-feed-item:not(defined) {
   @apply 
-  .shadow-lg 
+  .block
   .rounded-lg
   ;
 }
