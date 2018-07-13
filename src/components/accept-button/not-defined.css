@@ -1,0 +1,19 @@
+repeat-accept-button:not(defined) {
+  @apply 
+  .cursor-pointer 
+  .text-white 
+  .bg-white 
+  .h-16 
+  .w-16 
+  .rounded-full 
+  .border-teal
+  .border-solid 
+  .border-2 
+  .shadow-lg
+  .flex
+  .justify-center
+  .items-center
+  ;
+}
+
+@tailwind utilities;

@@ -13,6 +13,8 @@
   <script type="module" src="components/gif/index.js"></script>
   <link rel="stylesheet" href="components/delete-button/not-defined.css">
   <script type="module" src="components/delete-button/index.js"></script>
+  <link rel="stylesheet" href="components/accept-button/not-defined.css">
+  <script type="module" src="components/accept-button/index.js"></script>
 </head>
 
 <body class="bg-grey-lighter">
@@ -28,22 +30,14 @@
 
         <div class="mt-8 flex justify-around">
 
-          <!-- <button class="cursor-pointer text-white bg-white h-16 w-16 rounded-full border-red border-solid border-2 shadow-lg">
-            <img style="margin-top: 4px;" height="20px" width="20px" src="assets/delete-icon.png">
-          </button> -->
           <repeat-delete-button></repeat-delete-button>
+          <repeat-accept-button></repeat-accept-button>
 
-          <!-- repeat-circle-button -->
-          <button class="pointer text-white bg-white h-16 w-16 rounded-full border-teal border-solid border-2 shadow-lg">
-            <img style="margin-top: 4px;" height="24px" width="35px" src="assets/check-icon.png">
-          </button>
-          <!-- /repeat-circle-button -->
         </div>
       </div>
 
     </div>
   </div>
-  <!-- /repeat-container -->
 </body>
 
 </html>
