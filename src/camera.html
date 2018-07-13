@@ -32,6 +32,14 @@
     </div>
   </div>
 
+  <script type="module">
+    const playButton = document.querySelector('repeat-play-button');
+    const camera = document.querySelector('repeat-camera');
+    playButton.addEventListener('click', e => {
+      console.log(camera.takePhoto());
+    });
+  </script>
+
 </body>
 
 </html>

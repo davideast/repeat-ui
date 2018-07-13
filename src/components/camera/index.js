@@ -21,19 +21,16 @@ export class RepeatCamera extends HTMLElement {
 
   open() {
     navigator.mediaDevices.getUserMedia({
-      video: { facingMode: 'user' }
+      video: { facingMode: 'user', video: true }
     }).then(stream => {
       this.stream = stream;
-      this.src = URL.createObjectURL(this.stream);
-      this.video.src = this.src;
+      try {
+        this.video.srcObject = stream;
+      } catch(error) {
+        this.src = URL.createObjectURL(this.stream);
+      }
       this.video.play();
-    })
-    // const mediaSource = new MediaSource(this.stream);
-    // try {
-    //   this.video.srcObject = mediaSource;
-    // } catch (error) {
-    //   this.video.src = URL.createObjectURL(mediaSource);
-    // }
+    });
   }
 
   close() {
