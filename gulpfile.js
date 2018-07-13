@@ -37,7 +37,6 @@ gulp.task('component:css', () => {
         }),
       ])
     )
-    // .pipe(cssnano())
     .pipe(gulp.dest(`dist/components/${argv.component}`))
 });
 
@@ -63,12 +62,8 @@ gulp.task('tailwind:main', () => {
     .pipe(
       postcss([
         tailwindcss('./tailwind.js'),
-        // uncss({
-        //   html: [`src/components/${argv.component}/index.html`]
-        // }),
       ])
     )
-    // .pipe(cssnano())
     .pipe(gulp.dest(`dist`))
 });
 

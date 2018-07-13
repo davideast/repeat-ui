@@ -17,6 +17,8 @@
   "devDependencies": {
     "gulp-replace": "^1.0.0",
     "gulp-sequence": "^1.0.0",
+    "rxjs": "^6.2.1",
+    "spawn-rx": "^2.0.12",
     "uncss": "^0.16.2",
     "yargs": "^12.0.1"
   }
