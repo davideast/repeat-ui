@@ -11,18 +11,15 @@
   <script type="module" src="components/camera/index.js"></script>
   <link rel="stylesheet" href="components/play-button/not-defined.css">
   <script type="module" src="components/play-button/index.js"></script>
+  <link rel="stylesheet" href="components/header/not-defined.css">
+  <script type="module" src="components/header/index.js"></script>
 </head>
 
 <body class="bg-black">
 
   <div class="h-screen w-screen">
 
-    <!-- repeat-header -->
-    <header class="fixed bg-white w-screen h-16 flex justify-between items-center px-4">
-      <h2 class="font-mono text-pink font-hairline">Repeat</h2>
-      <div class="bg-purple rounded-full h-12 w-12"></div>
-    </header>
-    <!-- repeat-header -->
+    <repeat-header></repeat-header>
 
     <!-- repeat-camera -->
     <repeat-camera autoplay></repeat-camera>

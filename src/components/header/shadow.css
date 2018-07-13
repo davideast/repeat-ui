@@ -1,0 +1,5 @@
+:host {
+  @apply .block .fixed .bg-white .w-screen .h-16 .flex .justify-between .items-center .px-4;
+}
+
+@tailwind utilities;

@@ -7,7 +7,6 @@ export class PlayButton extends HTMLElement {
     `
   }
 
-
   connectedCallback() {
     this.shadow = this.attachShadow({ mode: 'open' });
     this.setAttribute('role', 'button');
