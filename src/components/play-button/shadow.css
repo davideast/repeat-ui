@@ -1,0 +1,6 @@
+:host {
+  @apply .text-white .h-16 .w-16 .rounded-full .flex .justify-center .items-center;
+  background-image: linear-gradient(-30deg, #C86DD7 0%, #3023AE 100%);
+}
+
+@tailwind utilities;

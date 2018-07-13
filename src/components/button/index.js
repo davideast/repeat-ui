@@ -1,6 +1,6 @@
-import { RepeatElement } from '../base/index.js';
 
-export class RepeatButton extends RepeatElement {
+export class RepeatButton extends HTMLElement {
+
   static get template() {
     return `
     /** SHADOW:STYLES **/

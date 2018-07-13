@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./repeat-ui.css">
   <link rel="stylesheet" href="components/camera/not-defined.css">
   <script type="module" src="components/camera/index.js"></script>
+  <link rel="stylesheet" href="components/play-button/not-defined.css">
+  <script type="module" src="components/play-button/index.js"></script>
 </head>
 
 <body class="bg-black">
@@ -28,11 +30,7 @@
 
     <div class="absolute pin-b w-screen flex justify-center items-center h-24">
 
-      <!-- repeat-circle-button -->
-      <button class="text-white bg-linear-purple h-16 w-16 rounded-full">
-        <img style="margin-left: 4px;" height="26px" width="29px" src="assets/play-icon.png">
-      </button>
-      <!-- /repeat-circle-button -->
+      <repeat-play-button></repeat-play-button>
 
     </div>
   </div>
