@@ -1,0 +1,7 @@
+:host {
+  @apply .block .bg-black .rounded-lg .shadow-lg;
+  height: 420px;
+  width: 320px;
+}
+
+@tailwind utilities;

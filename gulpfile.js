@@ -49,7 +49,11 @@ gulp.task('copy:assets', () => {
 
 gulp.task('pages', () => {
   return gulp
-    .src(['./src/index.html', './src/camera.html'])
+    .src([
+      './src/index.html', 
+      './src/camera.html',
+      './src/preview.html'
+    ])
     .pipe(gulp.dest('dist'));
 });
 

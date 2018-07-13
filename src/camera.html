@@ -36,7 +36,9 @@
     const playButton = document.querySelector('repeat-play-button');
     const camera = document.querySelector('repeat-camera');
     playButton.addEventListener('click', e => {
-      console.log(camera.takePhoto());
+      const { highRes, lowRes, imageHeight, imageWidth } = camera.takePhoto();
+      localStorage.setItem('highRes', highRes);
+      location.href = '/preview.html';
     });
   </script>
 
