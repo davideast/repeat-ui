@@ -1,0 +1,19 @@
+:host {
+  @apply 
+  .cursor-pointer 
+  .text-white 
+  .bg-white 
+  .h-16 
+  .w-16 
+  .rounded-full 
+  .border-red 
+  .border-solid 
+  .border-2 
+  .shadow-lg
+  .flex
+  .justify-center
+  .items-center
+  ;
+}
+
+@tailwind utilities;
